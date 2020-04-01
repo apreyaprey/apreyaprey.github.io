@@ -1,1 +1,9 @@
-{"studyInfo":{"name":"Simple Box Demo","date":""},"dimScales":{},"dimTicks":{},"dimMark":{}}
+{
+    "studyInfo": {
+        "name": "Simple Box Demo",
+        "date": ""
+    },
+    "dimScales": {},
+    "dimTicks": {},
+    "dimMark": {}
+}
