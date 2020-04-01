@@ -1075,7 +1075,7 @@
                 // collapse in
                 var pcHeight = 0;
                 if (isLeftChartFullScreenToggled) {
-                    pcHeight = (windowHeight - 50) * 0.9-50;
+                    pcHeight = (windowHeight - 50) * 0.7-50;
                 }else{
                     pcHeight = graphHeight;
                 }
@@ -1325,7 +1325,7 @@
         function reDrawPcChart () { 
             calWidthAndHeight();
 
-            var newGraphWidth = windowWidth*0.95-10; // (col-lg-9 x0.73) - (boside padding 15*2)
+            var newGraphWidth = windowWidth - 10; // (col-lg-9 x0.73) - (boside padding 15*2)
             // var newGraphWidth = windowWidth-scatterWidth-90;
             var newGraphHeight = graphHeight;
 
