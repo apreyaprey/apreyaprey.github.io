@@ -1340,7 +1340,7 @@
             }
 
             if(windowWidth<1200){
-                newGraphWidth = windowWidth-10;
+                newGraphWidth = windowWidth-20;
             }
 
             resizePcChart(newGraphWidth,newGraphHeight);
@@ -1381,10 +1381,10 @@
             graph = d3.parcoords()('#graph')
                 .data(cleanedData)
                 .margin({
-                    top: 30,
-                    left: 10,
-                    bottom: 10,
-                    right: 20
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    right: 0
                 })
                 .alpha(opacity)
                 .mode("queue")
