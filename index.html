@@ -703,7 +703,7 @@
 
         // add scatter chart
         function addScatterChart() {
-            var pcHeight = 250;
+            var pcHeight = d3.select("#graph").style("height").replace("px", "");
             var rightChartWidth = d3.select("#radarChart").style("width").replace("px", "");
             var selectedData;
             if (graph.brushed().length > 0) {
@@ -999,8 +999,7 @@
 
             // find height of parallel coordinate
             // to find the height for thumbnail div
-            var pcHeight = d3.select("#graph")
-                .style("height").replace("px", "");
+            var pcHeight = d3.select("#graph").style("height").replace("px", "");
 
             // hide zoomed area
             d3.selectAll("#zoomedArea")
@@ -1067,9 +1066,9 @@
 
             } else {
                 // collapse in
-                var pcHeight = 0;
+                var pcHeight = 250;
                 if (isLeftChartFullScreenToggled) {
-                    pcHeight = 200;
+                    pcHeight = 250;
                 }else{
                        pcHeight = graphHeight;
                 }
