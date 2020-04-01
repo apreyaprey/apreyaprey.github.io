@@ -1315,7 +1315,7 @@
         var pcIsColoredBy;
 
         var color = d3.scale.linear()
-            .range(["#3182bd", "#f33"]);
+            .range(["#d63447", "#f33"]);
 
 
         var scatterHeight = d3.select("#ScChartWrapper").style("height").replace("px", "");
@@ -1371,7 +1371,7 @@
 
             // set the height for graph div - this is critical otherwise
             // parallel coordinates graph will be drawn by height of 0px
-            d3.select("#graph").style("height", 100 + "px");
+            d3.select("#graph").style("height", graphHeight + "px");
 
             // draw parallel coordiantes chart
             // click event should highlight the image in thumbnails and show it in zoomed
