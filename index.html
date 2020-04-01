@@ -168,7 +168,7 @@
         
         // no img link
         if(file === 0 || file === undefined){
-            return "https://apreyaprey.github.io/blob/master/img/thorntontomasetti.jpg";
+            return "http://mingbopeng.github.io/DesignExplorer/img/thorntontomasetti.jpg";
         }
  
 
@@ -1075,7 +1075,7 @@
                 // collapse in
                 var pcHeight = 0;
                 if (isLeftChartFullScreenToggled) {
-                    pcHeight = (windowHeight - 50) * 0.7-50;
+                    pcHeight = (windowHeight - 109) * 0.5-50;
                 }else{
                     pcHeight = graphHeight;
                 }
@@ -1325,7 +1325,7 @@
         function reDrawPcChart () { 
             calWidthAndHeight();
 
-            var newGraphWidth = windowWidth - 01; // (col-lg-9 x0.73) - (boside padding 15*2)
+            var newGraphWidth = windowWidth*0.75-30; // (col-lg-9 x0.73) - (boside padding 15*2)
             // var newGraphWidth = windowWidth-scatterWidth-90;
             var newGraphHeight = graphHeight;
 
@@ -1334,13 +1334,13 @@
             }
 
             if (isLeftChartFullScreenToggled) {
-                newGraphHeight = windowHeight - 10;
-                newGraphWidth = windowWidth - 10;  
+                newGraphHeight = (windowHeight - 85) * 0.5-50;
+                newGraphWidth = windowWidth - 30;  
 
             }
 
             if(windowWidth<1200){
-                newGraphWidth = windowWidth-20;
+                newGraphWidth = windowWidth-30;
             }
 
             resizePcChart(newGraphWidth,newGraphHeight);
@@ -1381,10 +1381,10 @@
             graph = d3.parcoords()('#graph')
                 .data(cleanedData)
                 .margin({
-                    top: 20,
-                    left: 0,
-                    bottom: 5,
-                    right: 0
+                    top: 50,
+                    left: 20,
+                    bottom: 10,
+                    right: 20
                 })
                 .alpha(opacity)
                 .mode("queue")
@@ -1941,7 +1941,7 @@
                         var oldpcWidth = 0;
                         // var oldpcWidth = d3.select("#graph").style("width").replace("px", "");
                         if (windowWidth<1200) {
-                            oldpcWidth = windowWidth -10;
+                            oldpcWidth = windowWidth -70;
                         } else {
                             oldpcWidth = windowWidth*0.75 - 30;
                         }
