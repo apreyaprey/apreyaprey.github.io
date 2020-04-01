@@ -1069,8 +1069,9 @@
                 // collapse in
                 var pcHeight = 0;
                 if (isLeftChartFullScreenToggled) {
-                    pcHeight = 400;
+                    pcHeight = 200;
                 }else{
+                    graphHeight = 100;
                     pcHeight = graphHeight;
                 }
                 d3.select("#graph")
@@ -1917,7 +1918,7 @@
                     .classed("col-lg-12", isLeftChartFullScreenToggled);
 
                     if (isLeftChartFullScreenToggled) {
-                        var newpcHeight = 300;
+                        var newpcHeight = 200;
                         var newpcWidth = windowWidth - 40;  
 
                         resizePcChart(newpcWidth,newpcHeight);
