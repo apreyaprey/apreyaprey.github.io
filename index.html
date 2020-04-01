@@ -1319,16 +1319,16 @@
         function reDrawPcChart () { 
             calWidthAndHeight();
 
-            var newGraphWidth = windowWidth*0.75-30; // (col-lg-9 x0.73) - (boside padding 15*2)
+            var newGraphWidth = windowWidth-30; // (col-lg-9 x0.73) - (boside padding 15*2)
             // var newGraphWidth = windowWidth-scatterWidth-90;
-            var newGraphHeight = graphHeight;
+            var newGraphHeight = 250;
 
             if (newGraphHeight< scatterHeight) {
                 newGraphHeight = newGraphHeight;
             }
 
             if (isLeftChartFullScreenToggled) {
-                newGraphHeight = (windowHeight - 85) * 0.5-50;
+                newGraphHeight = 250;
                 newGraphWidth = windowWidth - 30;  
 
             }
