@@ -12,7 +12,7 @@ d3.parcoords = function (config) {
         mode: "default",
         rate: 20,
         width: 1200,
-        height: 300,
+        height: 600,
         margin: {
             top: 24,
             right: 0,
