@@ -1923,7 +1923,7 @@
                     .classed("col-lg-12", isLeftChartFullScreenToggled);
 
                     if (isLeftChartFullScreenToggled) {
-                        var newpcHeight = windowHeight * 2;
+                        var newpcHeight = (windowHeight - 109) * 0.5-50;
                         var newpcWidth = windowWidth - 30;  
 
                         resizePcChart(newpcWidth,newpcHeight);
