@@ -1075,7 +1075,7 @@
                 // collapse in
                 var pcHeight = 0;
                 if (isLeftChartFullScreenToggled) {
-                    pcHeight = (windowHeight - 50) * 0.7-50;
+                    pcHeight = (windowHeight * 0.5;
                 }else{
                     pcHeight = graphHeight;
                 }
@@ -1381,9 +1381,9 @@
             graph = d3.parcoords()('#graph')
                 .data(cleanedData)
                 .margin({
-                    top: 5,
+                    top: 20,
                     left: 0,
-                    bottom: 5,
+                    bottom: 20,
                     right: 0
                 })
                 .alpha(opacity)
