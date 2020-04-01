@@ -1315,7 +1315,7 @@
         var pcIsColoredBy;
 
         var color = d3.scale.linear()
-            .range(["#d63447", "#f33"]);
+            .range(["#3182bd", "#f33"]);
 
 
         var scatterHeight = d3.select("#ScChartWrapper").style("height").replace("px", "");
@@ -1943,7 +1943,7 @@
                         if (windowWidth<1200) {
                             oldpcWidth = windowWidth -10;
                         } else {
-                            oldpcWidth = windowWidth - 30;
+                            oldpcWidth = windowWidth*0.75 - 30;
                         }
                         
                         //back to normal size mode
